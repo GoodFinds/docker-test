@@ -1,10 +1,5 @@
 name: Run Remote Script
-
 on:
-  # Schedule to run at specific intervals (e.g., every hour)
-  schedule:
-    - cron: '0 * * * *'  # Runs every hour
-  
   # Allow manual triggering
   workflow_dispatch:
   
@@ -12,7 +7,6 @@ on:
   push:
     branches:
       - main
-
 jobs:
   run-script:
     runs-on: ubuntu-latest
