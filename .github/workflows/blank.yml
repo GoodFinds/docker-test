@@ -1,5 +1,7 @@
 name: Run Remote Script
 on:
+  schedule:
+     - cron: '0 * * * *'  # Runs every hour     
   # Allow manual triggering
   workflow_dispatch:
   
